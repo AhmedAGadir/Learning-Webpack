@@ -1,5 +1,7 @@
 // best one: https://hackernoon.com/a-tale-of-webpack-4-and-how-to-finally-configure-it-in-the-right-way-4e94c8e7e5c1
 
+note: nowhere here do i use webpack-dev-server
+
 // if you dont have webpack installed globally then do than
 $ npm install -g webpack webpack-cli
 
@@ -118,6 +120,20 @@ ive saved it in this directory
 
 
 
+
+i encountered some errors when trying to run: $ npm start dev
+i googled and used:
+
+$ npm install extract-text-webpack-plugin@next --save-dev
+$ npm i @babel/core
+$ npm run dev
+
+and it worked!
+
+
 // see the article (see top) for configuring support for SASS and much more
 
 
+// using the webpack dev server - live reloads etc
+// https://github.com/webpack/webpack-dev-server
+// https://bendyworks.com/blog/getting-started-with-webpack-dev-server
