@@ -35,7 +35,7 @@ $ npm install webpack webpack-cli --save-dev
 	}
 
 create ./src/index.js and put some code there.
-//index.js will be our entry point (where we call all our modules before they get bundled).
+// index.js is our default entry point (where we call all our modules before they get bundled).
 
 // now run the dev script
 $ npm run dev
@@ -69,9 +69,11 @@ $ npm install babel-core babel-loader babel-preset-env --save-dev
 // $ nano .babelrc  
 // im guessing this is for linux
 
+// in our root folder run: 
+
 $ touch .babelrc
 
-// inside paste: 
+// paste inside: 
 
 {
 "presets": [
