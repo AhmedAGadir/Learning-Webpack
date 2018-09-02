@@ -18,7 +18,8 @@ $ npm init
 // we need to install webpack v4 as a module and webpack-cli to run it from the terminal
 $ npm install webpack webpack-cli --save-dev
 //if you want to include webpack-dev-server then include it in the string above -- e.g. npm install webpack webpack-cli webpack-dev-server --save-dev 
-// --save-dev installs webpack and webpack-cli locally (they'll be in our devDependancies in package.json)
+// --save-dev installs webpack and webpack-cli locally as devDependancies.
+// if we wrote --save, they would be installed as production dependancies.
 
 // in package.json add a build script
 // you can name them whatever you want 
@@ -125,7 +126,7 @@ module.exports = {
 // ======= HTML and CSS imports 
 
 
-// see article for the rest
+// see article for the rest (note: traversy shows a different way to use bundle css files)
 // ive saved it in this directory
  ------- remember: -----------------
 // when you create the HTML file make sure that 
@@ -133,6 +134,7 @@ module.exports = {
 
 -------- note: 
 // if uploading this to github, remember to include a .gitignore file and /include node_modules
+
 
 // ================
 // i encountered some errors when trying to run: $ npm start dev
