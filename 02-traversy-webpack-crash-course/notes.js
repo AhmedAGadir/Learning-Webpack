@@ -53,3 +53,5 @@ $ npm install css-loader style-loader --save-dev
 // note: this way of doing things is different than the hackerrank article
 // with this way you just import the css style and thats it, 
 // with the hackerrank way, the css is compiled into a ./dist/style.css, which you then link to from your ./dist/index.html
+
+// see webpack.config.js for what to do next to compile our css more easily
