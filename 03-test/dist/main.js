@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/fruit.js":
+/*!**********************!*\
+  !*** ./src/fruit.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar fruit = {\n  favourite: 'mango'\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (fruit);\n\n//# sourceURL=webpack:///./src/fruit.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("alert('Hello World')\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fruit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fruit */ \"./src/fruit.js\");\n\nalert('Hello World');\ndocument.querySelector('div').textContent = _fruit__WEBPACK_IMPORTED_MODULE_0__[\"default\"].favourite;\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

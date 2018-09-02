@@ -28,6 +28,7 @@ $ npm install webpack webpack-cli webpack-dev-server --save-dev
 }
 
 // optional: add watch flag --watch for automatic rebundling when files change
+// remember these are JSON files, so dont include a comma on the last key
 
 create ./src/index.js and put some code there.
 // index.js is our default entry point
@@ -55,6 +56,62 @@ $ touch .babelrc
   "env"
   ]
 }
+
+// configuring babel 
+
+create webpack.config.js with the following content:
+
+// webpack v4
+const path = require('path');
+module.exports = {
+  entry: { main: './src/index.js' },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      }
+    ]
+  }
+};
+
+// also remove flags from our npm scripts now.
+
+"scripts": {
+  "build": "webpack --mode production",
+  "dev": "webpack --mode development",
+  "dev:server": "webpack-dev-server --mode development"
+},
+
+==========
+
+theres an error when you try to run it, fix with: 
+
+update: 
+
+$ npm i @babel/core @babel/preset-env --save-dev
+
+
+change .babelrc to: 
+
+{
+  "presets": ["@babel/preset-env"]
+}
+
+
+
+
+
+
+
+
 
 
 
