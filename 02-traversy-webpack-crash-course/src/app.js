@@ -1,7 +1,10 @@
 // this tells webpack that we want to use the style loader and the css loader for the css file
-// require('!style-loader!css-loader!./style.css')
+require('!style-loader!css-loader!./style.css')
+
+// ====== IGNORE THIS PART - IT DIDNT WORK - SCRAPPED IT ===========
 // if you want to do it in an easier way, refer to the webpack.config.js file, after setting it up like that, you can just write the following:
-require('./style.css')
+// require('./style.css')
+// ====================================================================
 
 let people = require('./people.js');
 let $ = require('jquery');
